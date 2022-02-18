@@ -685,7 +685,7 @@ class Company
                 default:
                     // Ignore empty values
                     if ($value == '') {
-                        continue;
+                        continue 2;
                     }
 
                     $methodName = 'set' . str_replace(' ', '', ucwords(str_replace('_', ' ', $key)));
